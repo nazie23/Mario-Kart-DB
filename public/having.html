@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <title>Having</title>
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projection.html">Projection</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="groupBy.html">Group By</a></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><a href="select.html">Select</a></li>
+                <li><b href="having.html">Having</b></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="mario-luigi.png"
+             align="right" width="150" height="110" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+<h2>Competition Participant Count</h2>
+<label for="minParticipants">Minimum Participants:</label>
+<input type="number" id="minParticipants" name="minParticipants" placeholder="e.g., 10">
+
+<button type="button" id="fetchParticipantCountsBtn">Get Participant Counts</button>
+
+<table id="participantsTable" border="1">
+    <thead>
+        <tr>
+            <th>Competition ID</th>
+            <th>Participant Count</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="having.js"></script>
+</body>
+</html>

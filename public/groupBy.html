@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <title>GROUP BY</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projection.html">Projection</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><b href="groupBy.html">Group By</b></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><a href="select.html">Select</a></li>
+                <li><a href="having.html">Having</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="mario-luigi.png"
+             align="right" width="150" height="110" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+
+    <h2>Player Count by Country</h2>
+    <label for="action">Select an Action:</label>
+    <select id="action" name="action">
+        <option value="all">Display All Countries</option>
+        <option value="filter">Choose Country</option>
+    </select>
+
+    <!-- Text area for entering country code (hidden by default) -->
+    <div id="countryCodeInput" style="display:none;">
+        <label for="countryCode">Enter Country Code (e.g., CAD, CHN):</label>
+        <textarea id="countryCode" name="countryCode" rows="1" cols="10"></textarea>
+    </div>
+    <button type="button" id="submitBtn">Enter</button>
+
+    <table id="groupByTable" border="1">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total Players</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="groupBy.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href="projection-select.css">
+    <title>PROJECTION</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><b href="projection.html">Projection</b></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="groupBy.html">Group By</a></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><a href="select.html">Select</a></li>
+                <li><a href="having.html">Having</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="track.jpg"
+             align="right" width="100" height="75" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+    <h2>Track Table</h2>
+    <form id = 'projectionForm'>
+        <div id = checkboxes>
+            <label>
+                trackName <input type="checkbox" class="attribute" value="trackName">
+            </label>
+            
+            <label>
+                terrainType <input type="checkbox" class="attribute" value="terrainType">
+            </label>
+            
+            <label>
+                trackShortcuts <input type="checkbox" class="attribute" value="trackShortcuts">
+            </label>
+            
+            <label>
+                laps <input type="checkbox"class="attribute" value="laps">
+            </label>
+            
+       </div>
+       <button id="submit"> Submit Projection </button> <br>
+    </form>
+   
+    <table id="projectionTable">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    
+    <script src="projection.js"></script>
+</body>
+</html>

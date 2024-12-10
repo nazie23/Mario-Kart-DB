@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <title>UPDATE</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projection.html">Projection</a></li>
+                <li><b href="update.html">Update</b></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="groupBy.html">Group By</a></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><a href="select.html">Select</a></li>
+                <li><a href="having.html">Having</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="biddybuggy.png"
+            align="right" width="100" height="90" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+  
+    <h2>Kart Table</h2>
+    <table id="kartTable" border="1">
+        <thead>
+            <tr>
+                <!--Table head, need to be adjusted accordingly to align with your own.-->
+                <th>kartID</th>
+                <th>kartName</th>
+                <th>handling</th>
+                <th>speed</th>
+                <th>weights</th>
+                <th>acceleration</th>
+                <th>update</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <h2>Reset Demotable</h2>
+    <p>If you wish to reset the table press on the reset button. If this is the first time you're running this page, you MUST use reset</p>
+    <button id="resetKartTable"> reset </button> <br>
+    <!-- A placeholder to display messages related to the reset operation. -->
+    <div id="resetResultMsg"></div>
+    <script src="update.js"></script>
+</body>
+</html>

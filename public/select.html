@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projection-select.css">
+    <title>Select Demo Table</title>
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projection.html">Projection</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="delete.html">Delete</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="groupBy.html">Group By</a></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><b href="select.html">Select</b></li>
+                <li><a href="having.html">Having</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="mario-luigi.png"
+             align="right" width="150" height="110" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+
+<h2>Select Data from Demo Table</h2>
+
+<!-- Form for selecting data -->
+<form id="selectForm">
+    <h3>Select Columns to Display</h3>
+    <div>
+        <label>
+            PlayerID
+            <input type="checkbox" class="columns" name="columns" value="PlayerID">
+        </label>
+        <label>
+            Email
+            <input type="checkbox" class="columns" name="columns" value="email">
+        </label>
+        <label>
+            UserName
+            <input type="checkbox" class="columns" name="columns" value="userName">
+        </label>
+        <label>
+            NickName
+            <input type="checkbox" class="columns" name="columns" value="nickName">
+        </label>
+        <label>
+            Country
+            <input type="checkbox" class="columns" name="columns" value="Country">
+        </label>
+    </div>
+    <br>
+
+    <h3>Filter Options</h3>
+    <div>
+        <label for="PlayerIDFilter">PlayerID:</label>
+        <input type="text" id="PlayerIDFilter" name="filters[PlayerID]" placeholder="e.g., 1">
+        <br>
+
+        <label for="emailFilter">Email:</label>
+        <input type="text" id="emailFilter" name="filters[email]" placeholder="e.g., example@example.com">
+        <br>
+
+        <label for="userNameFilter">UserName:</label>
+        <input type="text" id="userNameFilter" name="filters[userName]" placeholder="e.g., JohnDoe">
+        <br>
+
+        <label for="nickNameFilter">NickName:</label>
+        <input type="text" id="nickNameFilter" name="filters[nickName]" placeholder="e.g., JD">
+        <br>
+
+        <label for="countryFilter">Country:</label>
+        <input type="text" id="countryFilter" name="filters[Country]" placeholder="e.g., USA">
+        <br>
+    </div>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<h3>Results</h3>
+<div id="results"></div>
+
+<script src="select.js" > </script>
+
+</body>
+</html>

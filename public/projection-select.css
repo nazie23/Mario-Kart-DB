@@ -1,0 +1,151 @@
+/* GLOBAL STYLES */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    background-color: #8c0606;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+}
+
+li {
+    position: relative
+}
+
+li a {
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+li b {
+    color: #00d9ff;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    color: #00d9ff;
+}
+
+/* Add an image on hover */
+li:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Aligns the image vertically with the list item */
+    left: 220px; /* Adjust this to control the distance from the list */
+    transform: translateY(-50%);
+    width: 20px; /* Set the desired width of the image */
+    height: 20px; /* Set the desired height of the image */
+    background-image: url('starman.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+hr {
+    border-top: 2px solid rgb(44, 51, 62);
+    margin: auto;
+}
+
+form {
+    background-color: #510006;
+    padding: 20px;
+}
+
+label {
+  display: table-row; /* Ensures each label starts on a new line */
+  margin-bottom: 10px; /* Adds spacing between labels */
+}
+
+
+/* TABLE STYLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #313131;
+}
+
+input[type="text"] {
+    display: inline-block;
+    vertical-align: middle; /* Ensures the text field aligns properly */
+    padding: 10px 5px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(32, 107, 227);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgb(22, 87, 207);
+}
+
+button:active {
+    background-color: rgb(12, 67, 187);
+}
+
+/* INPUT STYLES */
+input, textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+/* OTHER STYLES */
+.loading-gif {
+    height: 1em;
+    vertical-align: middle;
+}

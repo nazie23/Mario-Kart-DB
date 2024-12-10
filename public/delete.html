@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <title>DELETE</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1>Queries:</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projection.html">Projection</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><b href="delete.html">Delete</b></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="groupBy.html">Group By</a></li>
+                <li><a href="nestedGroupBy.html">Nested Group By</a></li>
+                <li><a href="select.html">Select</a></li>
+                <li><a href="having.html">Having</a></li>
+                <li><a href="division.html">Division</a></li>
+            </ul>
+            <img src="luigi.png"
+            align="right" width="70" height="90" margin-left="10" margin-bottom="10">
+        </div>
+    </nav>
+
+    <label for="attr">Select Attribute</label>
+    <select id="attr">
+        <option value="characterName">Character Name</option>
+        <option value="weightClass">Weight Class</option>
+    </select>
+
+    <form id="deleteDemotable">
+        Value: <input type="text" id="insertValue" placeholder="Enter Value to be Removed" required> <br><br>
+        <button type="submit"> delete </button> <br>
+    </form>
+    <div id="deleteResultMsg"></div>
+
+    <table id="characterTable" border="1">
+        <thead>
+            <tr>
+                <th>Character Name</th>
+                <th>Weight Class</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <script src="delete.js"></script>
+
+</body>
+</html>
